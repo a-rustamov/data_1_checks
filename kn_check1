@@ -1,1 +1,13 @@
+print ('Hello World!')
+
+list_example = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+print ('1st element in the list \n', list_example[0])
+
+dic_example = {'England':'Man City',  'Italy': 'AC Milan'}
+print ('The champion of Italy is \n', dic_example['Italy'])
+
+tuple_example = ('Winter', 'Spring', 'Summer', 'Fall')
+print('Seasons in out tuple \n', tuple_example[:])
+
+
 
