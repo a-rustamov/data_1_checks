@@ -1,16 +1,17 @@
 #Import and plot Apple stock price
 import pandas as pd
-import matplotlib.pyplot as plt
+import 
+.pyplot as plt
 import os
 
 dirname = os.path.dirname(__file__)
 filename = os.path.join(dirname, 'assets', '2014_apple_stock.csv')
 
 df = pd.read_csv(filename)
-#Convert date in string to date in datetime fromat
+#Convert date in string to date in datetime format
 df.AAPL_x = pd.to_datetime(df.AAPL_x)
 
-#Group Date by month with average monthyl price
+#Group Date by month with average monthly price
 df_monthly = df.groupby(pd.Grouper(key='AAPL_x', freq='M')).mean().reset_index()
 
 #Plot the data
