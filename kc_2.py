@@ -1,7 +1,6 @@
 #Import and plot Apple stock price
 import pandas as pd
-import 
-.pyplot as plt
+import matplotlib.pyplot as plt
 import os
 
 dirname = os.path.dirname(__file__)
