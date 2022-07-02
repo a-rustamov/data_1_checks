@@ -22,6 +22,7 @@ def num_of_strings (file, search_string):
 
 print(
     f"The number of times {search_string} appear in file is {num_of_strings(file, search_string)}")
+file.close()
 
 #User input on category/column to be used to calculate average age
 age_by = input(
